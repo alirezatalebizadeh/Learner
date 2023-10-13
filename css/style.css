@@ -7,6 +7,15 @@ body {
   color: #666;
 }
 
+
+::before {
+  margin-left: 5px !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
 body:before {
   content: "";
   position: fixed;
@@ -586,7 +595,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 .site-mobile-menu {
   width: 300px;
   position: fixed;
-  right: 0;
+  height: 100%;
+  right: -35px;
   z-index: 2000;
   padding-top: 20px;
   background: #ffffff;
@@ -967,6 +977,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   left: 0;
   right: 0;
   bottom: 0;
+  width: 100% !important;
   background: rgba(19, 106, 213, 0.85);
   z-index: -0;
 }
@@ -984,6 +995,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 @media (max-width: 767.98px) {
   .untree_co-hero, .untree_co-hero>.container>.row, .bg-img, .bg-img>.container>.row {
     min-height: 750px;
+  }
+}
+
+@media screen and (max-width:400px) {
+
+  .top-bar .icon-lock,
+  .top-bar .icon-person {
+    display: none;
   }
 }
 
